@@ -98,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
                                             break;
                                     }
                                     break;
-
                             }
                         }else{
                             msn();
