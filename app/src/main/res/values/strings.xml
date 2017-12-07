@@ -3,11 +3,9 @@
     <string-array name="planets_array">
         <item>Milhas</item>
         <item>Km</item>
-        <item>Pes</item>
     </string-array>
     <string-array name="moedas_array">
         <item>Dolar</item>
         <item>Real</item>
-        <item>Euro</item>
     </string-array>
 </resources>

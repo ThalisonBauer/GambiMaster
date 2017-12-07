@@ -27,25 +27,26 @@
         android:layout_marginTop="22dp"
         android:ems="5"
         android:inputType="numberDecimal" />
+
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/txtResultado"
-        android:layout_alignLeft="@+id/txtResultado"
         android:layout_alignRight="@+id/txtResultado"
-        android:layout_alignStart="@+id/txtResultado"
-        android:layout_below="@+id/btnResultado" />
+        android:layout_below="@+id/btnResultado"
+        android:layout_toEndOf="@+id/btnResultado"
+        android:layout_toRightOf="@+id/btnResultado" />
 
     <Spinner
-    android:id="@+id/spinner"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignEnd="@+id/edtValue"
-    android:layout_alignLeft="@+id/edtValue"
-    android:layout_alignRight="@+id/edtValue"
-    android:layout_alignStart="@+id/edtValue"
-    android:layout_below="@+id/edtValue" />
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtValue"
+        android:layout_alignStart="@+id/edtValue"
+        android:layout_below="@+id/edtValue"
+        android:layout_toLeftOf="@+id/btnResultado"
+        android:layout_toStartOf="@+id/btnResultado" />
 
 
 
@@ -93,17 +94,17 @@
         android:layout_toLeftOf="@+id/textView9"
         android:layout_toStartOf="@+id/textView9"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="numberDecimal" />
 
     <Spinner
         android:id="@+id/spinner3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/edtValue2"
         android:layout_alignLeft="@+id/edtValue2"
-        android:layout_alignRight="@+id/edtValue2"
         android:layout_alignStart="@+id/edtValue2"
-        android:layout_below="@+id/edtValue2" />
+        android:layout_below="@+id/btnResultado2"
+        android:layout_toLeftOf="@+id/btnResultado2"
+        android:layout_toStartOf="@+id/btnResultado2" />
 
     <Button
         android:id="@+id/btnResultado2"
@@ -133,9 +134,53 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/txtResultado2"
-        android:layout_alignLeft="@+id/txtResultado2"
         android:layout_alignRight="@+id/txtResultado2"
-        android:layout_alignStart="@+id/txtResultado2"
-        android:layout_below="@+id/txtResultado2" />
+        android:layout_below="@+id/txtResultado2"
+        android:layout_toEndOf="@+id/btnResultado2"
+        android:layout_toRightOf="@+id/btnResultado2" />
+
+    <EditText
+        android:id="@+id/edtAngulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edtValue2"
+        android:layout_alignLeft="@+id/spinner3"
+        android:layout_alignRight="@+id/edtValue2"
+        android:layout_alignStart="@+id/spinner3"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner3"
+        android:layout_marginTop="11dp"
+        android:layout_toLeftOf="@+id/txtResultado"
+        android:layout_toStartOf="@+id/txtResultado"
+        android:text="Conversão de Ângulos" />
+
+    <Button
+        android:id="@+id/btnAngulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edtAngulo"
+        android:layout_toEndOf="@+id/spinner3"
+        android:layout_toRightOf="@+id/spinner3"
+        android:text="=" />
+
+    <TextView
+        android:id="@+id/txtAngulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtAngulo"
+        android:layout_alignEnd="@+id/spinner4"
+        android:layout_alignRight="@+id/spinner4"
+        android:layout_alignTop="@+id/btnAngulo"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 </RelativeLayout>
